@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour // standard WASD
 
   protected virtual void Move(Vector2 input)
   {
-    rb.AddForce(input);
+    rb.AddForce(input * Player.Instance.speed);
   }
 }
 
