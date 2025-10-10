@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Cogwheel : MonoBehaviour
 {
-  private float baseSpeed = 60f;
+  private float baseSpeed = 80f;
   [SerializeField] private float turnMultiplier = 1f;
 
   void FixedUpdate()
