@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -27,15 +26,20 @@ public class Door : MonoBehaviour
     doormatFilter.useTriggers = true;
   }
 
+  void Start()
+  {
+    SetDoor(false);
+  }
+
   void Update()
   {
-    int overlapCount = 0;
     if (Physics2D.OverlapCollider(doormat, doormatFilter, doormatResults) > 0)
     {
       SetDoor(false);
       return;
     }
 
+    int overlapCount = 0;
     // check each point
     foreach (Transform wallPoint in wallPoints)
     {
@@ -45,18 +49,17 @@ public class Door : MonoBehaviour
       }
     }
 
-    SetDoor(overlapCount >= pointsNeededToActivate);
+    bool shouldActivate = overlapCount >= pointsNeededToActivate;
+    if (shouldActivate != isActive)
+    {
+      SetDoor(shouldActivate);
+    }
   }
 
   void SetDoor(bool to)
   {
-    if (isActive == to)
-    {
-      return;
-    }
-
     isActive = to;
-    sr.enabled = to;
     col.enabled = to;
+    sr.color = to ? Color.white : Color.clear;
   }
 }
