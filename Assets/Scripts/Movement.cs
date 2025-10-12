@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour // standard WASD
 {
   protected Rigidbody2D rb;
+  protected int speed;
   void Start()
   {
     rb = GetComponent<Rigidbody2D>();
@@ -18,7 +19,12 @@ public class Movement : MonoBehaviour // standard WASD
 
   protected virtual void Move(Vector2 input)
   {
-    rb.AddForce(input * Player.Instance.speed);
+    rb.AddForce(input * speed);
+  }
+
+  public void SetSpeed(int newSpeed)
+  {
+    speed = newSpeed;
   }
 }
 

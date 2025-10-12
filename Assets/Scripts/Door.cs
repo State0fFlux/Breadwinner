@@ -2,12 +2,9 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-  [Header("Detection Points")]
-  [SerializeField] private Transform[] wallPoints;
   [SerializeField] private Collider2D doormat;
 
   // Settings
-  private int pointsNeededToActivate = 2;
   private float checkRadius = 0.05f; // for small overlap tolerance
   private bool isActive = false;
 
@@ -38,18 +35,7 @@ public class Door : MonoBehaviour
       SetDoor(false);
       return;
     }
-
-    int overlapCount = 0;
-    // check each point
-    foreach (Transform wallPoint in wallPoints)
-    {
-      if (Physics2D.OverlapCircle(wallPoint.position, checkRadius, 1 << Global.wallLayer))
-      {
-        overlapCount++;
-      }
-    }
-
-    bool shouldActivate = overlapCount >= pointsNeededToActivate;
+    bool shouldActivate = Physics2D.OverlapCircle(doormat.transform.position, checkRadius, 1 << Global.wallLayer);
     if (shouldActivate != isActive)
     {
       SetDoor(shouldActivate);
