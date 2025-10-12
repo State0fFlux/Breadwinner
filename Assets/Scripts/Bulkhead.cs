@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class Bulkhead : MonoBehaviour
 {
   [SerializeField] private Collider2D doormat;
 
@@ -10,14 +10,12 @@ public class Door : MonoBehaviour
 
   // Components
   private Collider2D col;
-  private SpriteRenderer sr;
   private ContactFilter2D doormatFilter;
   private Collider2D[] doormatResults = new Collider2D[1];
 
   void Awake()
   {
     col = GetComponent<Collider2D>();
-    sr = GetComponent<SpriteRenderer>();
     doormatFilter = new ContactFilter2D();
     doormatFilter.SetLayerMask(1 << Global.bridgeLayer);
     doormatFilter.useTriggers = true;
@@ -25,27 +23,43 @@ public class Door : MonoBehaviour
 
   void Start()
   {
-    SetDoor(false);
+    OpenDoor();
   }
 
   void Update()
   {
     if (Physics2D.OverlapCollider(doormat, doormatFilter, doormatResults) > 0)
     {
-      SetDoor(false);
+      OpenDoor();
       return;
     }
     bool shouldActivate = Physics2D.OverlapCircle(doormat.transform.position, checkRadius, 1 << Global.wallLayer);
     if (shouldActivate != isActive)
     {
-      SetDoor(shouldActivate);
+      if (shouldActivate)
+      {
+        CloseDoor();
+      }
+      else
+      {
+        OpenDoor();
+      }
     }
+  }
+
+  void OpenDoor()
+  {
+    SetDoor(false);
+  }
+
+  void CloseDoor()
+  {
+    SetDoor(true);
   }
 
   void SetDoor(bool to)
   {
     isActive = to;
     col.enabled = to;
-    sr.color = to ? Color.white : Color.clear;
   }
 }

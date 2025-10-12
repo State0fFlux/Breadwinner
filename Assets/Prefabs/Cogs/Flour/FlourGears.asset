@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3722787a6605140e698d03a91e2ec410, type: 3}
+  m_Name: FlourGears
+  m_EditorClassIdentifier: Assembly-CSharp::GearSet
+  gearPrefabs:
+  - {fileID: 5376945862786441385, guid: 82ee4108bbaca4d1ea66fa36a3f0c55b, type: 3}
+  - {fileID: 5376945862786441385, guid: 548365bc0dc9049a288ae7119e55155d, type: 3}
+  - {fileID: 5376945862786441385, guid: 46762557d2d174228acc92fa0b92b1f8, type: 3}
+  - {fileID: 5376945862786441385, guid: c23be9f25e793405f9d59c992ceba57a, type: 3}
+  edible: 1

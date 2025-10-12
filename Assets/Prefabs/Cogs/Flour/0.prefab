@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 7467663993807849024}
   - component: {fileID: 571168363597351329}
   m_Layer: 0
-  m_Name: Closed
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +426,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1811119260454078170, guid: bae83e0a617ff4145be0ed4b03f869da, type: 3}
-  m_Color: {r: 0.5849056, g: 0.5409645, b: 0.35590956, a: 1}
+  m_Color: {r: 0.9528302, g: 0.7236116, b: 0.9326187, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -449,6 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cogwheel
   turnMultiplier: 1
+  gearSet: {fileID: 11400000, guid: 4b217750eb17f437c98a16609a4f647f, type: 2}
+  currentStage: 0
 --- !u!50 &571168363597351329
 Rigidbody2D:
   serializedVersion: 5
@@ -556,7 +558,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.804, g: 0.74464434, b: 0.49103355, a: 1}
+  m_Color: {r: 0.6320754, g: 0.5532408, b: 0.40846384, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
