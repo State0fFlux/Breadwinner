@@ -10,11 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2120157966436704246}
   - component: {fileID: 365296360859475910}
+  - component: {fileID: -8927009063283934667}
+  - component: {fileID: 1695096467710066870}
   - component: {fileID: 3302619404484459450}
   - component: {fileID: 4312759216363044026}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,7 +50,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   health: 3
-  speed: 1
+--- !u!114 &-8927009063283934667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960454146118258617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7b86b6b8afc48898f1dd68b787b29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Movement
+  speed: 10
+--- !u!114 &1695096467710066870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960454146118258617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0581c002cce0d425aa0d670ee0145ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inventory
 --- !u!50 &3302619404484459450
 Rigidbody2D:
   serializedVersion: 5
@@ -61,8 +87,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
-  m_LinearDamping: 10
+  m_Mass: 1
+  m_LinearDamping: 1
   m_AngularDamping: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
