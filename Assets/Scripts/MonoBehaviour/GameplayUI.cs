@@ -13,6 +13,11 @@ public class GameplayUI : MonoBehaviour
     Inventory.Instance.OnInventoryChanged += UpdateInventoryUI;
   }
 
+  void Start()
+  {
+    UpdateInventoryUI();
+  }
+
   void UpdateInventoryUI()
   {
     // Handle ingredients

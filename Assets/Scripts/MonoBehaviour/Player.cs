@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 
   [Header("Player Stats")]
   [SerializeField] int health;
+  private GameObject lantern;
 
 
   [HideInInspector]
@@ -17,10 +18,13 @@ public class Player : MonoBehaviour
     if (Instance != null && Instance != this)
     {
       Destroy(Instance.gameObject);
-    } else
+    }
+    else
     {
       Instance = this;
     }
+
+    lantern = transform.Find("Light").gameObject;
   }
 
   void Start()
@@ -29,5 +33,13 @@ public class Player : MonoBehaviour
     CompanionData companion = ScriptableObject.CreateInstance<CompanionData>();
     companion.type = CompanionData.Type.Cat;
     Inventory.AddCompanion(companion);
+  }
+
+  public void UpdateLantern(GameObject lantern)
+  {
+    GameObject old = this.lantern;
+    this.lantern = lantern;
+    this.lantern.transform.SetParent(transform, false);
+    Destroy(old);
   }
 }

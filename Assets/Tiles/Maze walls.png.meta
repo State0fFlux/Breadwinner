@@ -1,0 +1,658 @@
+fileFormatVersion: 2
+guid: 34fe76f671a0e459488bfe161ed302d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9208492832993402271
+    second: Maze walls_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maze walls_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 2, y: 0}
+        - {x: 0, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      physicsShape:
+      - - {x: 2, y: 0}
+        - {x: 0, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: f9d5d4361732bcf70800000000000000
+      internalID: 9208492832993402271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4ca5435250509452e817c1e01ee8ca47
+      internalID: -87356938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 20e5e1bc61d444527b9e4a1805980757
+      internalID: -1665880833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b1510e08fd4fd42db8ec9552f9e15df8
+      internalID: -84233968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: -2, y: -2}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 2}
+        - {x: 2, y: 2}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: -2, y: -2}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 6072ba37f6ea6446994e4a691cd8f576
+      internalID: 1840650725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 79ed9e36fd131405688cbabd1824454d
+      internalID: -583064581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 62de24eda6dec46a782a72fa354b1dc3
+      internalID: -464684220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 2, y: -2}
+        - {x: 8, y: -2}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      physicsShape:
+      - - {x: 2, y: -2}
+        - {x: 8, y: -2}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 058fb4cb9846e48d9bcab0cb341e89a5
+      internalID: 1813537423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 0}
+        - {x: 0, y: -2}
+        - {x: 8, y: -2}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 0}
+        - {x: 0, y: -2}
+        - {x: 8, y: -2}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b2e0d1b919e994b9faac3265c79e8843
+      internalID: 1186242825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: 8, y: -2}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: 8, y: -2}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b411f2e768cc946619b7345960b6b92a
+      internalID: 508227026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: -2, y: -2}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: -2, y: -2}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 02883acc587fb443bb0e97a6c32b6484
+      internalID: 475858734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      physicsShape:
+      - - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: e3d5e219143914d3cb8d57ee2d8dfb3c
+      internalID: 1901590281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ad1145a775be94905b8a47704e4b4d1d
+      internalID: 1413748416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 2}
+        - {x: 0, y: 2}
+        - {x: -2, y: 0}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      physicsShape:
+      - - {x: 8, y: 2}
+        - {x: 0, y: 2}
+        - {x: -2, y: 0}
+        - {x: -2, y: -8}
+        - {x: 8, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 12ad15958595842c7bf3ece742bbc633
+      internalID: 216531498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 2, y: -2}
+        - {x: 8, y: -2}
+        - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      physicsShape:
+      - - {x: 2, y: -2}
+        - {x: 8, y: -2}
+        - {x: 8, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 2}
+        - {x: -8, y: 2}
+        - {x: -8, y: -8}
+        - {x: 2, y: -8}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0a09b891c0334468e89700b6cb3d5e58
+      internalID: 1706137014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maze walls_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 2, y: 0}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: 0, y: -2}
+      physicsShape:
+      - - {x: 2, y: 0}
+        - {x: 2, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -2}
+        - {x: 0, y: -2}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7a66443fc45cd481c9c2eea15307ec6b
+      internalID: 280319710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f3a54301bb1d84679a05af88ea11e77f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":true,"isAlternate":false}'
+    nameFileIdTable:
+      Maze walls_0: 9208492832993402271
+      Maze walls_1: -87356938
+      Maze walls_10: 475858734
+      Maze walls_11: 1901590281
+      Maze walls_12: 1413748416
+      Maze walls_13: 216531498
+      Maze walls_14: 1706137014
+      Maze walls_15: 280319710
+      Maze walls_2: -1665880833
+      Maze walls_3: -84233968
+      Maze walls_4: 1840650725
+      Maze walls_5: -583064581
+      Maze walls_6: -464684220
+      Maze walls_7: 1813537423
+      Maze walls_8: 1186242825
+      Maze walls_9: 508227026
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

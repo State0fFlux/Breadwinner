@@ -45,6 +45,12 @@ public class Inventory : MonoBehaviour
   public static void AddCompanion(CompanionData toAdd)
   {
     Instance.companions.Add(toAdd);
+    switch (toAdd.type)
+    {
+      case CompanionData.Type.Fairy:
+        
+        break;
+    }
     Instance.OnInventoryChanged?.Invoke();
   }
 

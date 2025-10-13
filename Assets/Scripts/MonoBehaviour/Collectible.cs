@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Collectible : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class Collectible : MonoBehaviour
         Inventory.AddIngredient(ingredient);
         break;
       case CompanionData companion:
+        // TODO: make this more modular if we add more companion types
+        switch (companion.type)
+        {
+          case CompanionData.Type.Fairy:
+            // Play fairy collection SFX
+            Player.Instance.UpdateLantern(transform.Find("Light").gameObject);
+            break;
+        }
         Inventory.AddCompanion(companion);
         break;
       default:
