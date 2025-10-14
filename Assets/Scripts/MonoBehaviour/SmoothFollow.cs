@@ -3,18 +3,21 @@ using UnityEngine;
 public class SmoothFollow : MonoBehaviour
 {
   [Header("Target Settings")]
-  [SerializeField] private Transform target;     // The object to follow
 
   [Header("Camera Settings")]
   [SerializeField] private Vector3 offset = new Vector3(0, 0, -10);  // Typical 2D camera offset
   [SerializeField, Range(0.01f, 1f)] private float smoothSpeed = 0.125f; // How fast the camera catches up
 
   private Vector3 velocity = Vector3.zero;
+  private Transform target;
+
+  void Start()
+  {
+    target = Player.Instance.transform;
+  } 
 
   void LateUpdate()
   {
-    if (target == null) return;
-
     // Desired position = target position + offset
     Vector3 desiredPosition = target.position + offset;
 
@@ -30,15 +33,6 @@ public class SmoothFollow : MonoBehaviour
   /// </summary>
   public void SnapToTarget()
   {
-    if (target == null) return;
     transform.position = target.position + offset;
-  }
-
-  /// <summary>
-  /// Call this to change the target at runtime.
-  /// </summary>
-  public void SetTarget(Transform newTarget)
-  {
-    target = newTarget;
   }
 }

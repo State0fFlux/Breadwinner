@@ -22,12 +22,12 @@ public class GameplayUI : MonoBehaviour
   {
     // Handle ingredients
     IngredientData type = MazeMaster.Instance.GetCurrentObjective();
-    float percentage = Inventory.GetPercentage(type);
+    float percentage = Inventory.Instance.GetPercentage(type);
     ingredientSlider.value = percentage;
 
     companionsText.text = "Companions:\n";
     // Handle companions
-    foreach (CompanionData companion in Inventory.GetCompanions())
+    foreach (CompanionData companion in Inventory.Instance.GetCompanions())
     {
       companionsText.text += $"{companion.type}\n";
     }

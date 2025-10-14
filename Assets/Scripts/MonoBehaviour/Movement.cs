@@ -5,20 +5,16 @@ using UnityEngine;
 public class Movement : MonoBehaviour // standard WASD
 {
   protected Rigidbody2D rb;
-  [SerializeField] int speed = 2;
 
-  public static Movement Instance; // Singleton
+  public static Movement Instance;
 
-  void Awake()
+  void OnEnable()
   {
-    if (Instance != null && Instance != this)
-    {
-      Destroy(Instance.gameObject);
-    }
-    else
-    {
-      Instance = this;
-    }
+    Instance = this;
+  }
+  void OnDisable()
+  {
+    Instance = null;
   }
 
   void Start()
@@ -35,12 +31,7 @@ public class Movement : MonoBehaviour // standard WASD
   protected virtual void Move(Vector2 input)
   {
     //rb.AddForce(input * speed);
-    rb.linearVelocity = input * speed;
-  }
-
-  public void SetSpeed(int newSpeed)
-  {
-    speed = newSpeed;
+    rb.linearVelocity = input * PlayerData.Instance.speed;
   }
 }
 
