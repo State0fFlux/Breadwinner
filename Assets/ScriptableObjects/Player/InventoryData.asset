@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0581c002cce0d425aa0d670ee0145ba3, type: 3}
   m_Name: InventoryData
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
+  startingIngredients: []
+  startingCompanions: []
   basicLantern: {fileID: 4237185459586277250, guid: 299d8cc04cdb045f6a755081240fc5ef, type: 3}
   upgradedLantern: {fileID: 1295762066516195822, guid: 493eba2de8d574d978dc97c5a25f6121, type: 3}

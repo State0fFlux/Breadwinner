@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
   public PlayerData playerData;
   public Inventory inventory;
-  [HideInInspector] public GameObject lantern;
+  public GameObject lantern;
   [HideInInspector] public static int bridgesPlayerIsOn = 0;
 
   public static Player Instance;
@@ -22,22 +22,27 @@ public class Player : MonoBehaviour
 
   void Start()
   {
+    if (!lantern.activeInHierarchy)
+    {
+      Destroy(lantern);
+      lantern = null;
+    }
     SetupLantern();
-    /*
-    // CHEAT CODE: start with cat companion
-    CompanionData companion = ScriptableObject.CreateInstance<CompanionData>();
-    companion.type = CompanionData.Type.Cat;
-    inventory.AddCompanion(companion);
-    */
   }
 
   public void SetupLantern()
   {
-    if (lantern != null) Destroy(lantern);
+    if (lantern == null)
+    {
+      return;
+    }
 
-    if (Inventory.Instance.HasCompanion(CompanionData.Type.Fairy))
-      lantern = Instantiate(Inventory.Instance.upgradedLantern, transform);
-    else
-      lantern = Instantiate(Inventory.Instance.basicLantern, transform);
+    GameObject expected = Inventory.Instance.HasCompanion(CompanionData.Type.Fairy) ? Inventory.Instance.upgradedLantern : Inventory.Instance.basicLantern;
+    if (lantern.name.Contains(expected.name)) // no need to replace!
+    {
+      return;
+    }
+    Destroy(lantern);
+    lantern = Instantiate(expected, transform);
   }
 }

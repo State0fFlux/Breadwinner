@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   playerData: {fileID: 11400000, guid: 00b6cc786a71c4432b5279e02b63e44c, type: 2}
   inventory: {fileID: 11400000, guid: 07c35aa7494d542db967e7393b53b2e5, type: 2}
-  lantern: {fileID: 0}
+  lantern: {fileID: 8518745186987569338}
 --- !u!114 &3927460529951952592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,5 +277,10 @@ PrefabInstance:
 --- !u!4 &4919487433350186717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 626193747792062949, guid: 299d8cc04cdb045f6a755081240fc5ef, type: 3}
+  m_PrefabInstance: {fileID: 5545382654823722808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8518745186987569338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4237185459586277250, guid: 299d8cc04cdb045f6a755081240fc5ef, type: 3}
   m_PrefabInstance: {fileID: 5545382654823722808}
   m_PrefabAsset: {fileID: 0}
