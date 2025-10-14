@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewCompanion", menuName = "Inventory/Companion")]
+[CreateAssetMenu(fileName = "NewCompanion", menuName = "Collectible/Companion")]
 public class CompanionData : CollectibleData
 {
   public enum Type

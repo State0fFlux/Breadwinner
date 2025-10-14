@@ -22,7 +22,6 @@ public class Gear : MonoBehaviour
 
     // Calculate radius from sprite size (assuming pivot at center)
     radius = sr.bounds.size.x / 2f;
-    print(radius);
   }
 
   void Update()
@@ -72,7 +71,7 @@ public class Gear : MonoBehaviour
 
   bool CanEat()
   {
-    if (!gearSet.edible || currentStage >= gearSet.gearPrefabs.Length || !Inventory.HasCompanion(CompanionData.Type.Cat))
+    if (!gearSet.edible || currentStage >= gearSet.gearPrefabs.Length || !Inventory.Instance.HasCompanion(CompanionData.Type.Cat))
     {
       return false; // not edible or already fully eaten
     }

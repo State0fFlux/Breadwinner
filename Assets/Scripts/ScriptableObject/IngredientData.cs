@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewIngredient", menuName = "Inventory/Ingredient")]
+[CreateAssetMenu(fileName = "NewIngredient", menuName = "Collectible/Ingredient")]
 public class IngredientData : CollectibleData
 {
   public enum Type

@@ -2,44 +2,42 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+  public PlayerData playerData;
+  public Inventory inventory;
+  [HideInInspector] public GameObject lantern;
+  [HideInInspector] public static int bridgesPlayerIsOn = 0;
 
-  [Header("Player Stats")]
-  [SerializeField] int health;
-  private GameObject lantern;
+  public static Player Instance;
 
-
-  [HideInInspector]
-  public static int bridgesPlayerIsOn = 0;
-
-  public static Player Instance; // Singleton
-
-  void Awake()
+  void OnEnable()
   {
-    if (Instance != null && Instance != this)
-    {
-      Destroy(Instance.gameObject);
-    }
-    else
-    {
-      Instance = this;
-    }
-
-    lantern = transform.Find("Light").gameObject;
+    Inventory.Instance.OnInventoryChanged += SetupLantern;
+    Instance = this;
+  }
+  void OnDisable()
+  {
+    Inventory.Instance.OnInventoryChanged -= SetupLantern;
+    Instance = null;
   }
 
   void Start()
   {
+    SetupLantern();
+    /*
     // CHEAT CODE: start with cat companion
     CompanionData companion = ScriptableObject.CreateInstance<CompanionData>();
     companion.type = CompanionData.Type.Cat;
-    Inventory.AddCompanion(companion);
+    inventory.AddCompanion(companion);
+    */
   }
 
-  public void UpdateLantern(GameObject lantern)
+  public void SetupLantern()
   {
-    GameObject old = this.lantern;
-    this.lantern = lantern;
-    this.lantern.transform.SetParent(transform, false);
-    Destroy(old);
+    if (lantern != null) Destroy(lantern);
+
+    if (Inventory.Instance.HasCompanion(CompanionData.Type.Fairy))
+      lantern = Instantiate(Inventory.Instance.upgradedLantern, transform);
+    else
+      lantern = Instantiate(Inventory.Instance.basicLantern, transform);
   }
 }
