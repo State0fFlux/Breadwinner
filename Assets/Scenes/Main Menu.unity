@@ -219,6 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 373640982}
   - component: {fileID: 373640981}
+  - component: {fileID: 373640983}
   m_Layer: 0
   m_Name: IMG_9976_3
   m_TagString: Untagged
@@ -284,21 +285,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &373640982
-Transform:
+--- !u!224 &373640982
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373640980}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 153.88889, y: -153.88889, z: -564.2593}
+  m_LocalPosition: {x: 0, y: 0, z: -564.2593}
   m_LocalScale: {x: 51.296295, y: 51.296295, z: 51.296295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853322588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 153.88889, y: -153.88889}
+  m_SizeDelta: {x: 2.76, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &373640983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373640980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &429203821
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 429203823}
   - component: {fileID: 429203822}
+  - component: {fileID: 429203824}
   m_Layer: 0
   m_Name: IMG_9976_2
   m_TagString: Untagged
@@ -374,21 +394,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &429203823
-Transform:
+--- !u!224 &429203823
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429203821}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -128.24074, z: -564.2593}
+  m_LocalPosition: {x: 0, y: 0, z: -564.2593}
   m_LocalScale: {x: 51.296295, y: 51.296295, z: 51.296295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853322588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -128.24074}
+  m_SizeDelta: {x: 3.16, y: 1.63}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &429203824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429203821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &651646883
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651646885}
   - component: {fileID: 651646884}
+  - component: {fileID: 651646886}
   m_Layer: 0
   m_Name: IMG_9976_4
   m_TagString: Untagged
@@ -464,21 +503,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &651646885
-Transform:
+--- !u!224 &651646885
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651646883}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 170.81598, y: -102.59259, z: -564.2593}
+  m_LocalPosition: {x: 0, y: 0, z: -564.2593}
   m_LocalScale: {x: 51.296295, y: 51.296295, z: 51.296295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853322588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 170.81598, y: -102.59259}
+  m_SizeDelta: {x: 2.49, y: 1.06}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &651646886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651646883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &681203979
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1828153701}
   - component: {fileID: 1828153700}
+  - component: {fileID: 1828153702}
   m_Layer: 0
   m_Name: IMG_9976_0
   m_TagString: Untagged
@@ -950,21 +1008,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1828153701
-Transform:
+--- !u!224 &1828153701
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828153699}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -170.81598, y: -102.59259, z: -564.2593}
+  m_LocalPosition: {x: 0, y: 0, z: -564.2593}
   m_LocalScale: {x: 51.296295, y: 51.296295, z: 51.296295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853322588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170.81598, y: -102.59259}
+  m_SizeDelta: {x: 3, y: 2.04}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1828153702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828153699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &1853322584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,9 +1167,9 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a213d7e5bdd044a5da81ac22ae67cad7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.17
-  m_Pitch: 1
-  Loop: 0
+  m_Volume: 0.2
+  m_Pitch: 3
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1197,6 +1273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879134483}
   - component: {fileID: 1879134482}
+  - component: {fileID: 1879134484}
   m_Layer: 0
   m_Name: IMG_9984_1
   m_TagString: Untagged
@@ -1262,21 +1339,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1879134483
-Transform:
+--- !u!224 &1879134483
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879134481}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 153.88889, z: -461.66666}
+  m_LocalPosition: {x: 0, y: 0, z: -461.66666}
   m_LocalScale: {x: 51.296295, y: 51.296295, z: 51.296295}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1853322588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 153.88889}
+  m_SizeDelta: {x: 9.61, y: 4.56}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1879134484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879134481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055e9acd875a440169927162c3cb16ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BobbleBobble
+  bobHeight: 3
+  bobSpeed: 0.47
 --- !u!1 &2009117810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,8 +1385,9 @@ GameObject:
   - component: {fileID: 2009117813}
   - component: {fileID: 2009117812}
   - component: {fileID: 2009117815}
+  - component: {fileID: 2009117816}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,8 +1434,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.62352943, g: 0.62352943, b: 0.62352943, a: 1}
-    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
+    m_PressedColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1468,6 +1564,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009117816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009117810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &2091799374
 GameObject:
   m_ObjectHideFlags: 0
