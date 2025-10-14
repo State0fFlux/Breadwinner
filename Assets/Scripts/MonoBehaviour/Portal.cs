@@ -7,4 +7,13 @@ public class Portal : Door
   {
     counterpart.Exit();
   }
+
+  public override void Exit()
+  {
+    base.Exit();
+    if (!Inventory.Instance.HasCompanion(CompanionData.Type.Ghost))
+    {
+      SmoothCamera.Instance.SnapToTarget();
+    }
+  }
 }

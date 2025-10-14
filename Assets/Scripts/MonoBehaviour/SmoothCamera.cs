@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SmoothFollow : MonoBehaviour
+public class SmoothCamera : MonoBehaviour
 {
   [Header("Target Settings")]
 
@@ -10,6 +10,17 @@ public class SmoothFollow : MonoBehaviour
 
   private Vector3 velocity = Vector3.zero;
   private Transform target;
+
+  public static SmoothCamera Instance;
+
+  void OnEnable()
+  {
+    Instance = this;
+  }
+  void OnDisable()
+  {
+    Instance = null;
+  }
 
   void Start()
   {

@@ -3,7 +3,7 @@ public class Door : MonoBehaviour
 {
   [SerializeField] Transform doormat;
 
-  public void Exit()
+  public virtual void Exit()
   {
     Player.Instance.transform.position = doormat.position;
   }
