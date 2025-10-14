@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c1feedc22b5b84e09ad84ea99df6c3ff
+guid: cf6e9430a90e84095bde2d0033ee0a0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1175253290201583205
-    second: IMG_9975-ezgif.com-effects (1)_0
+      213: 7650547815977187100
+    second: IMG_9978-ezgif.com-effects_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_9975-ezgif.com-effects (1)_0
+      name: IMG_9978-ezgif.com-effects_0
       rect:
         serializedVersion: 2
-        x: 1526
-        y: 824
-        width: 333
-        height: 219
+        x: 1514
+        y: 49
+        width: 371
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56e039304a65f4010800000000000000
-      internalID: 1175253290201583205
+      spriteID: c17f57c44b43c2a60800000000000000
+      internalID: 7650547815977187100
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_9975-ezgif.com-effects (1)_0: 1175253290201583205
+      IMG_9978-ezgif.com-effects_0: 7650547815977187100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
