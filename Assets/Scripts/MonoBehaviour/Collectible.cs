@@ -12,10 +12,10 @@ public class Collectible : MonoBehaviour
     switch (data)
     {
       case IngredientData ingredient:
-        Inventory.Instance.AddIngredient(ingredient);
+        InventoryData.Instance.AddIngredient(ingredient);
         break;
       case CompanionData companion:
-        Inventory.Instance.AddCompanion(companion);
+        InventoryData.Instance.AddCompanion(companion);
         break;
       default:
         Debug.LogError($"Unrecognized collectible type: {data.GetType()}");

@@ -7,25 +7,21 @@ public class GameplayUI : MonoBehaviour
   [SerializeField] Slider ingredientSlider;
   [SerializeField] TextMeshProUGUI companionsText;
 
-  void OnEnable() => Inventory.Instance.OnInventoryChanged += UpdateInventoryUI;
-  void OnDisable() => Inventory.Instance.OnInventoryChanged -= UpdateInventoryUI;
-
-
-  void Start()
-  {
-    UpdateInventoryUI();
-  }
+  void OnEnable() => InventoryData.Instance.OnInventoryChanged += UpdateInventoryUI;
+  void OnDisable() => InventoryData.Instance.OnInventoryChanged -= UpdateInventoryUI;
 
   void UpdateInventoryUI()
   {
+    print("Updating!");
+
     // Handle ingredients
     IngredientData type = MazeMaster.Instance.GetCurrentObjective();
-    float percentage = Inventory.Instance.GetPercentage(type);
+    float percentage = InventoryData.Instance.GetPercentage(type);
     ingredientSlider.value = percentage;
 
     companionsText.text = "Companions:\n";
     // Handle companions
-    foreach (CompanionData companion in Inventory.Instance.GetCompanions())
+    foreach (CompanionData companion in InventoryData.Instance.Companions)
     {
       companionsText.text += $"{companion.type}\n";
     }

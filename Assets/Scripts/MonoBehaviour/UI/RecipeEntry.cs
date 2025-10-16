@@ -12,6 +12,6 @@ public class RecipeEntry : MonoBehaviour
   {
     text = GetComponent<TextMeshProUGUI>();
     text.text = ingredient.ToString().ToLower();
-    slash.enabled = Inventory.Instance.GetPercentage(ingredient) == 1;
+    slash.enabled = InventoryData.Instance.GetPercentage(ingredient) == 1;
   }
 }

@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-  public PlayerData playerData;
-  public Inventory inventory;
   public GameObject lantern;
   [HideInInspector] public static int bridgesPlayerIsOn = 0;
 
@@ -16,12 +14,12 @@ public class Player : MonoBehaviour
       Destroy(Instance.gameObject);
     }
     Instance = this;
-    Inventory.Instance.OnInventoryChanged += SetupLantern;
+    InventoryData.Instance.OnInventoryChanged += SetupLantern;
   }
   void OnDisable()
   {
     Instance = null;
-    Inventory.Instance.OnInventoryChanged -= SetupLantern;
+    InventoryData.Instance.OnInventoryChanged -= SetupLantern;
   }
 
   void Start()
@@ -41,7 +39,7 @@ public class Player : MonoBehaviour
       return;
     }
 
-    GameObject expected = Inventory.Instance.HasCompanion(CompanionData.Type.Fairy) ? Inventory.Instance.upgradedLantern : Inventory.Instance.basicLantern;
+    GameObject expected = InventoryData.Instance.HasCompanion(CompanionData.Type.Fairy) ? InventoryData.Instance.upgradedLantern : InventoryData.Instance.basicLantern;
     if (lantern.name.Contains(expected.name)) // no need to replace!
     {
       return;

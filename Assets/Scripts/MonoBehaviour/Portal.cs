@@ -11,7 +11,7 @@ public class Portal : Door
   public override void Exit()
   {
     base.Exit();
-    if (!Inventory.Instance.HasCompanion(CompanionData.Type.Ghost))
+    if (!InventoryData.Instance.HasCompanion(CompanionData.Type.Ghost))
     {
       SmoothCamera.Instance.SnapToTarget();
     }
