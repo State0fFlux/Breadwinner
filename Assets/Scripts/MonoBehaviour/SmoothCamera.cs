@@ -15,6 +15,10 @@ public class SmoothCamera : MonoBehaviour
 
   void OnEnable()
   {
+    if (Instance != null && Instance != this)
+    {
+      Destroy(Instance.gameObject);
+    }
     Instance = this;
   }
   void OnDisable()

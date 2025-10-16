@@ -8,10 +8,9 @@ public class GameplayUI : MonoBehaviour
   [SerializeField] Slider ingredientSlider;
   [SerializeField] TextMeshProUGUI companionsText;
 
-  void Awake()
-  {
-    Inventory.Instance.OnInventoryChanged += UpdateInventoryUI;
-  }
+  void OnEnable() => Inventory.Instance.OnInventoryChanged += UpdateInventoryUI;
+  void OnDisable() => Inventory.Instance.OnInventoryChanged -= UpdateInventoryUI;
+
 
   void Start()
   {

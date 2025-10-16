@@ -5,14 +5,17 @@ public class MazeMaster : MonoBehaviour
   public Door levelStart;
   [SerializeField] private IngredientData currentObjective;
 
-  void Awake()
+  void OnEnable()
   {
     if (Instance != null && Instance != this)
     {
       Destroy(Instance.gameObject);
     }
-
     Instance = this;
+  }
+  void OnDisable()
+  {
+    Instance = null;
   }
 
   void Start()

@@ -8,17 +8,15 @@ public class Collectible : MonoBehaviour
   void OnTriggerEnter2D(Collider2D other)
   {
     if (!other.CompareTag("Player")) return;
-    Player player = other.gameObject.GetComponent<Player>();
-    Inventory inv = player.inventory;
 
     // Call the right inventory method based on actual type
     switch (data)
     {
       case IngredientData ingredient:
-        inv.AddIngredient(ingredient);
+        Inventory.Instance.AddIngredient(ingredient);
         break;
       case CompanionData companion:
-        inv.AddCompanion(companion);
+        Inventory.Instance.AddCompanion(companion);
         break;
       default:
         Debug.LogError($"Unrecognized collectible type: {data.GetType()}");

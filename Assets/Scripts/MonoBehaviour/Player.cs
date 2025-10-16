@@ -11,13 +11,17 @@ public class Player : MonoBehaviour
 
   void OnEnable()
   {
-    Inventory.Instance.OnInventoryChanged += SetupLantern;
+    if (Instance != null && Instance != this)
+    {
+      Destroy(Instance.gameObject);
+    }
     Instance = this;
+    Inventory.Instance.OnInventoryChanged += SetupLantern;
   }
   void OnDisable()
   {
-    Inventory.Instance.OnInventoryChanged -= SetupLantern;
     Instance = null;
+    Inventory.Instance.OnInventoryChanged -= SetupLantern;
   }
 
   void Start()

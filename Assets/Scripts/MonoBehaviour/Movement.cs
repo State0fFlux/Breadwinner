@@ -10,6 +10,10 @@ public class Movement : MonoBehaviour // standard WASD
 
   void OnEnable()
   {
+    if (Instance != null && Instance != this)
+    {
+      Destroy(Instance.gameObject);
+    }
     Instance = this;
   }
   void OnDisable()
