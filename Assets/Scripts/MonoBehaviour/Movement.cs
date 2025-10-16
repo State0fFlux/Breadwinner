@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class Movement : MonoBehaviour // standard WASD
