@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BobbleBobble : MonoBehaviour
 {
-    public float bobHeight = 10f;
-    public float bobSpeed = 2f;
+    public float bobHeight = 3f;
+    public float bobSpeed = 0.47f;
 
     private RectTransform rectTransform;
     private Vector3 originalPosition;

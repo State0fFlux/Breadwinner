@@ -8,7 +8,7 @@ public class Appear : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            spriteToShow.enabled = true;
+            spriteToShow.enabled = !spriteToShow.enabled;
         }
     }
 }

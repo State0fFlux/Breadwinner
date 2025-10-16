@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Gear Sandbox.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Main Menu.unity
+    guid: 7b1167a0d346f4c929a7cd557ba39546
+  - enabled: 1
+    path: Assets/Scenes/Dark Room.unity
+    guid: edaa91f9b3bcb4cb2a7b39d860dce189
+  - enabled: 1
+    path: Assets/Scenes/Pantry.unity
+    guid: e71981678d5f342b589bac9d32f004db
+  - enabled: 1
+    path: Assets/Scenes/Salt Room.unity
+    guid: 980f169c5d151461db5fd93761ffe196
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

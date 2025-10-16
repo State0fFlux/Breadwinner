@@ -67,6 +67,7 @@ public class Inventory : ScriptableObject
     {
       return false;
     }
+
     ingredients[ingredient] = GetCount(ingredient) + 1;
     OnInventoryChanged?.Invoke();
     return true;
