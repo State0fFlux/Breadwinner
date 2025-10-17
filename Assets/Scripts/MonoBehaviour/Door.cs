@@ -6,6 +6,8 @@ public class Door : MonoBehaviour
   public virtual void Exit()
   {
     Player.Instance.transform.position = doormat.position;
+    Vector2 direction = (doormat.position - transform.position).normalized;
+    Player.Instance.Movement.SetDirection(direction);
   }
 
   void OnTriggerEnter2D(Collider2D other)

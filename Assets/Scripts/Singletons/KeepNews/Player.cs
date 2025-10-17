@@ -4,17 +4,21 @@ using UnityEngine.Rendering.Universal;
 
 public class Player : KeepNewSingleton<Player>
 {
+  public Movement Movement;
   [HideInInspector] public static int bridgesPlayerIsOn = 0;
+  public int speed = 30;
 
   protected override void OnEnable()
   {
     base.OnEnable();
     Global.OnFairyAcquired += ImproveLight;
+    Movement = gameObject.AddComponent<Movement>();
   }
   protected override void OnDisable()
   {
     base.OnDisable();
     Global.OnFairyAcquired -= ImproveLight;
+    Destroy(Movement);
   }
 
   void ImproveLight()

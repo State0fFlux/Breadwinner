@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour // standard WASD
 {
-  protected Rigidbody2D rb;
+  private Rigidbody2D rb;
+  private Vector2 currDirection = Vector2.zero;
+  private Vector2 prevInput = Vector2.zero;
+  private Vector2 currInput = Vector2.zero;
 
   void Start()
   {
@@ -11,14 +14,30 @@ public class Movement : MonoBehaviour // standard WASD
 
   void Update()
   {
-    Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
-    Move(input);
+    currInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+    if (currInput != prevInput)
+    {
+      currDirection = currInput;
+    }
+    prevInput = currInput;
   }
 
-  void Move(Vector2 input)
+  void FixedUpdate()
+  {
+    Move();
+  }
+
+  void Move()
   {
     //rb.AddForce(input * speed);
-    rb.linearVelocity = input * PlayerData.Instance.speed;
+    rb.linearVelocity = currDirection * Player.Instance.speed;
+  }
+
+  // External method to set direction (e.g., from portal)
+  public void SetDirection(Vector2 direction)
+  {
+    if (direction != Vector2.zero)
+      currDirection = direction.normalized;
   }
 }
 

@@ -1,7 +1,6 @@
 using UnityEngine;
 public class LevelMaster : KeepNewSingleton<LevelMaster>
 {
-  public Door levelStart;
   public LevelData data;
 
   private AudioSource audioSrc;
@@ -28,7 +27,6 @@ public class LevelMaster : KeepNewSingleton<LevelMaster>
     InventoryData.Instance.Remove(data.companionGoal);
     audioSrc.clip = data.theme;
     audioSrc.Play();
-    levelStart.Exit();
   }
 
   void ImproveCamera()
