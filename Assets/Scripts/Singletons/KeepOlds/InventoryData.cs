@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class InventoryData : Singleton<InventoryData>
+public class InventoryData : KeepOldSingleton<InventoryData>
 {
   // Only used for setting debug start inventory
 
@@ -40,14 +40,12 @@ public class InventoryData : Singleton<InventoryData>
     ingredients.Clear();
     foreach (IngredientData ingredient in startingIngredients)
     {
-      print("I start with " + ingredient.type);
       ingredients[ingredient] = ingredient.needed; // max out
     }
 
     companions.Clear();
     foreach (CompanionData companion in startingCompanions)
     {
-      print("I start with " + companion.type);
       companions.Add(companion);
     }
   }
@@ -78,7 +76,6 @@ public class InventoryData : Singleton<InventoryData>
   public float GetPercentage(IngredientData ingredient)
   {
     float percentage = (float)GetCount(ingredient) / ingredient.needed;
-    print(ingredient + ": " + GetCount(ingredient) + " / " + ingredient.needed + " = " + (float)GetCount(ingredient) / ingredient.needed);
     return percentage;
   }
 

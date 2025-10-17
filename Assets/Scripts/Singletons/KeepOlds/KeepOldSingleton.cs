@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+public abstract class KeepOldSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
   public static T Instance { get; private set; }
 
@@ -8,7 +8,6 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
   {
     if (Instance != null && Instance != this)
     {
-      Debug.LogWarning($"Duplicate singleton of type {typeof(T)} found. Destroying {gameObject.name}.");
       Destroy(gameObject); // kep the oldest Instance
       return;
     }

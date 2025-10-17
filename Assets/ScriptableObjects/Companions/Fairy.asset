@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51836a874f18a4a869aaa9b9e9933594, type: 3}
   m_Name: Fairy
   m_EditorClassIdentifier: Assembly-CSharp::Companion
-  type: 0
   icon: {fileID: 0}
+  type: 0

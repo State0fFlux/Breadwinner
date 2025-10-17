@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
   health: 3
-  speed: 2
+  speed: 30
 --- !u!114 &1174286754202149509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,10 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0581c002cce0d425aa0d670ee0145ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryData
-  startingIngredients:
-  - {fileID: 11400000, guid: ad4332b2280a549afbfc0cde03af445f, type: 2}
-  - {fileID: 11400000, guid: d5e0efcf46aea455f8ddbdf17d33089c, type: 2}
-  startingCompanions:
-  - {fileID: 11400000, guid: a353d1faabbf94bd29446a066bd10202, type: 2}
+  startingIngredients: []
+  startingCompanions: []
   basicLantern: {fileID: 4237185459586277250, guid: 299d8cc04cdb045f6a755081240fc5ef, type: 3}
   upgradedLantern: {fileID: 1295762066516195822, guid: 493eba2de8d574d978dc97c5a25f6121, type: 3}

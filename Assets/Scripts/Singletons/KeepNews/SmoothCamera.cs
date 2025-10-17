@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SmoothCamera : MonoBehaviour
+public class SmoothCamera : KeepNewSingleton<SmoothCamera>
 {
   [Header("Target Settings")]
 
@@ -10,21 +10,6 @@ public class SmoothCamera : MonoBehaviour
 
   private Vector3 velocity = Vector3.zero;
   private Transform target;
-
-  public static SmoothCamera Instance;
-
-  void OnEnable()
-  {
-    if (Instance != null && Instance != this)
-    {
-      Destroy(Instance.gameObject);
-    }
-    Instance = this;
-  }
-  void OnDisable()
-  {
-    Instance = null;
-  }
 
   void Start()
   {

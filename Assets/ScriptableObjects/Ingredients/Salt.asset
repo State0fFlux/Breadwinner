@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   icon: {fileID: 0}
   type: 0
-  needed: 1
+  needed: 3

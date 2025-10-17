@@ -159,7 +159,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 35
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -692,7 +692,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 3, z: 1}
+  m_LocalScale: {x: 2, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2554820353467404287}
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 2151034455808599714}
   - component: {fileID: 463225475547809346}
   m_Layer: 0
-  m_Name: MazeMaster
+  m_Name: LevelMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MazeMaster
   levelStart: {fileID: 706743754345697005}
-  currentObjective: {fileID: 0}
+  level: {fileID: 0}
 --- !u!82 &463225475547809346
 AudioSource:
   m_ObjectHideFlags: 0

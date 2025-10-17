@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Cat
   m_EditorClassIdentifier: Assembly-CSharp::Companion
   icon: {fileID: 0}
+  name: 
+  tagline: 
+  biography: 
   type: 1
+  theme: {fileID: 0}

@@ -1376,6 +1376,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1174286754202149509, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
+      propertyPath: startingCompanions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174286754202149509, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
+      propertyPath: startingIngredients.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3764390891129609811, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
       propertyPath: m_Name
       value: SingletonData
@@ -2706,11 +2714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634b6b55e61aa4df88a715098d34dbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
-  subMenus:
-  - button: {fileID: 1596772566}
-    panel: {fileID: 1055582003}
-  - button: {fileID: 1164180786}
-    panel: {fileID: 184074113}
+  subMenus: []
 --- !u!1 &1879134481
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,8 +3415,8 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1037823726}
   - {fileID: 681203982}
   - {fileID: 1853322588}
   - {fileID: 1079486245}
   - {fileID: 1508397733}
+  - {fileID: 1037823726}

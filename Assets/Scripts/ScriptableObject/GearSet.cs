@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewGearSet", menuName = "Gear/Gear Set")]
+[CreateAssetMenu(fileName = "NewGearSet", menuName = "Gear Set")]
 public class GearSet : ScriptableObject
 {
   [Header("Gear Prefabs (in order of stages)")]
