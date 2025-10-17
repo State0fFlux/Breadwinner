@@ -70,7 +70,7 @@ public class Gear : MonoBehaviour
 
   bool CanEat()
   {
-    if (!gearSet.edible || currentStage >= gearSet.gearPrefabs.Length || !InventoryData.Instance.HasCompanion(CompanionData.Type.Cat))
+    if (!gearSet.edible || currentStage >= gearSet.gearPrefabs.Length || !InventoryData.Instance.Has(CompanionData.Type.Cat))
     {
       return false; // not edible or already fully eaten
     }

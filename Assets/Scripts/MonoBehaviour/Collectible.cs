@@ -1,27 +1,15 @@
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public abstract class Collectible<T> : MonoBehaviour
 {
-  public CollectibleData data; // assign IngredientData or CompanionData in Inspector
+  public T data;
 
   void OnTriggerEnter2D(Collider2D other)
   {
     if (!other.CompareTag("Player")) return;
-
-    // Call the right inventory method based on actual type
-    switch (data)
-    {
-      case IngredientData ingredient:
-        InventoryData.Instance.AddIngredient(ingredient);
-        break;
-      case CompanionData companion:
-        InventoryData.Instance.AddCompanion(companion);
-        break;
-      default:
-        Debug.LogError($"Unrecognized collectible type: {data.GetType()}");
-        break;
-    }
-
+    AddToInventory(data);
     Destroy(gameObject);
   }
+
+  protected abstract void AddToInventory(T data);
 }

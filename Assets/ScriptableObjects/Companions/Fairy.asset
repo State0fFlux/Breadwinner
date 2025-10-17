@@ -12,5 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51836a874f18a4a869aaa9b9e9933594, type: 3}
   m_Name: Fairy
   m_EditorClassIdentifier: Assembly-CSharp::Companion
-  icon: {fileID: 0}
+  collectibleIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  character: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  name: Honeybell
+  tagline: Give me a tagline!
+  biography: "With just a sweep of her hand, Honeybell is able to conjure tiny golden
+    sparks that fill Crust\u2019s Bakery with warmth. These sparks seem to be alive,
+    fluttering and thriving long after she\u2019s gone. When they\u2019re not filling
+    the bakery, these sparks seem to reside in her long, glistening hair giving it
+    a soft, gentle glow.\n\nHoneybell adores sweets, especially custard tarts topped
+    with fruit, and can often be caught sneaking one (or four) when she thinks nobody\u2019s
+    looking. She swears that her lights shine brighter after a sugar boost. Whether
+    that\u2019s true or not, nobody\u2019s brave enough to argue with her when it
+    comes to her sweets. "
   type: 0
+  theme: {fileID: 8300000, guid: 77033dcfa8e2041ae889cbaa47852ed8, type: 3}

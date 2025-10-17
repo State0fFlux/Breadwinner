@@ -12,5 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51836a874f18a4a869aaa9b9e9933594, type: 3}
   m_Name: Ghost
   m_EditorClassIdentifier: Assembly-CSharp::Companion
+  collectibleIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  character: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  name: Brine
+  tagline: Give me a tagline!
+  biography: "Ever since Crust\u2019s Bakery first opened its doors, something\u2019s
+    been\u2026 off. Ingredients would be moved, windows would creak open and trails
+    of salt appeared in the strangest places. That\u2019s Brine: an earnest ghost
+    who decided that it was their duty to haunt the bakery with all the ghosty-ness
+    they could muster. Unfortunately, they quickly discovered that\u2026 they\u2019re
+    not very good at it. Whenever Crust comes to investigate Brine\u2019s shenanigans,
+    they\u2019d panic and hide under the shelves until the coast was clear.\n\nStill,
+    they haven\u2019t given up. Every morning, Brine coats themselves in a light
+    dusting of salt to give their ghostly form more shape. It\u2019s said to sparkle
+    like frost when the light hits it right. The marigold resting on Brine\u2019s
+    head never seems to wilt. Nobody knows why, but it always seems to stand taller
+    whenever Brine would nudge a bag of sugar towards Crust rather than making it
+    vanish altogether. It turns out, helping may be far more fulfilling to Brine
+    than haunting ever was."
   type: 2
-  icon: {fileID: 0}
+  theme: {fileID: 8300000, guid: f50240397cf004290b689da6c19c4e22, type: 3}

@@ -1,8 +1,25 @@
+using TMPro;
 using UnityEngine;
 
 public class Portal : Door
 {
   [HideInInspector] public Portal counterpart;
+  bool ghostPhase = false;
+
+  void OnEnable()
+  {
+    Global.OnGhostAcquired += EnableGhostPhase;
+  }
+  void OnDisable()
+  {
+    Global.OnGhostAcquired -= EnableGhostPhase;
+  }
+
+  void EnableGhostPhase()
+  {
+    ghostPhase = true;
+  }
+
   public override void Enter()
   {
     counterpart.Exit();
@@ -11,7 +28,7 @@ public class Portal : Door
   public override void Exit()
   {
     base.Exit();
-    if (!InventoryData.Instance.HasCompanion(CompanionData.Type.Ghost))
+    if (!ghostPhase)
     {
       SmoothCamera.Instance.SnapToTarget();
     }

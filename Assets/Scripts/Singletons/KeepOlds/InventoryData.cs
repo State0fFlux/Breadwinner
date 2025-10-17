@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Diagnostics;
 
 
 public class InventoryData : KeepOldSingleton<InventoryData>
@@ -15,15 +16,14 @@ public class InventoryData : KeepOldSingleton<InventoryData>
 
   // Used internally to store inventory during game
   private readonly Dictionary<IngredientData, int> ingredients = new Dictionary<IngredientData, int>();
-  private readonly HashSet<CompanionData> companions = new HashSet<CompanionData>();
+  private readonly List<CompanionData> companions = new List<CompanionData>();
   public IReadOnlyDictionary<IngredientData, int> Ingredients => ingredients;
-  public IReadOnlyCollection<CompanionData> Companions => companions;
+  public IReadOnlyList<CompanionData> Companions => companions;
 
   // Signals
   public event Action OnInventoryChanged;
 
-  public GameObject basicLantern;
-  public GameObject upgradedLantern;
+  public GameObject fairyLight;
 
   void OnEnable()
   {
@@ -50,7 +50,7 @@ public class InventoryData : KeepOldSingleton<InventoryData>
     }
   }
 
-  public bool AddIngredient(IngredientData ingredient)
+  public bool Add(IngredientData ingredient)
   {
     if (GetCount(ingredient) >= ingredient.needed)
     {
@@ -62,13 +62,37 @@ public class InventoryData : KeepOldSingleton<InventoryData>
     return true;
   }
 
-  public bool AddCompanion(CompanionData toAdd)
+  public bool Add(CompanionData toAdd)
   {
     if (companions.Contains(toAdd))
     {
       return false;
     }
     companions.Add(toAdd);
+    Global.newCompanion = true;
+    OnInventoryChanged?.Invoke();
+    return true;
+  }
+
+  public bool Remove(CompanionData toRemove)
+  {
+    if (!companions.Contains(toRemove))
+    {
+      return false;
+    }
+    companions.Remove(toRemove);
+    OnInventoryChanged?.Invoke();
+    return true;
+  }
+
+  public bool Remove(IngredientData toRemove)
+  {
+    if (GetCount(toRemove) == 0)
+    {
+      return false;
+    }
+
+    ingredients[toRemove] = GetCount(toRemove) - 1;
     OnInventoryChanged?.Invoke();
     return true;
   }
@@ -84,13 +108,25 @@ public class InventoryData : KeepOldSingleton<InventoryData>
     return ingredients.GetValueOrDefault(ingredient, 0);
   }
 
-  public bool HasCompanion(CompanionData.Type CompanionType)
+  public bool Has(CompanionData.Type type)
   {
     foreach (CompanionData companion in companions)
     {
-      if (companion.type == CompanionType)
+      if (companion.type == type)
       {
         return true;
+      }
+    }
+    return false;
+  }
+
+  public bool Has(IngredientData.Type type)
+  {
+    foreach (KeyValuePair<IngredientData, int> pair in ingredients)
+    {
+      if (pair.Key.type == type)
+      {
+        return pair.Value == pair.Key.needed;
       }
     }
     return false;

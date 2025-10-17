@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
-    guid: 7b1167a0d346f4c929a7cd557ba39546
+    guid: 44bed436900f84db988a60cfd1df89a0
   - enabled: 1
     path: Assets/Scenes/Dark Room.unity
     guid: edaa91f9b3bcb4cb2a7b39d860dce189

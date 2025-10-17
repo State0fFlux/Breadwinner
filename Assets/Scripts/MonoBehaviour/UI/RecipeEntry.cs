@@ -8,7 +8,7 @@ public class RecipeEntry : MonoBehaviour
 
   private TextMeshProUGUI text;
 
-  void Start()
+  void Awake()
   {
     text = GetComponent<TextMeshProUGUI>();
     text.text = ingredient.ToString().ToLower();

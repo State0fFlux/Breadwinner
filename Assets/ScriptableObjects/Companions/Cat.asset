@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51836a874f18a4a869aaa9b9e9933594, type: 3}
   m_Name: Cat
   m_EditorClassIdentifier: Assembly-CSharp::Companion
-  icon: {fileID: 0}
-  name: 
-  tagline: 
-  biography: 
+  collectibleIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  character: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  name: Puff
+  tagline: Give me a tagline!
+  biography: "Nobody knows what color Puff\u2019s fur really is anymore. Not even
+    Puff himself. He\u2019s spent so much time napping in flour bags by the bakery
+    windows, that he\u2019s become permanently dusted white. He claims it\u2019s
+    for the warmth, but everyone knows that he can\u2019t resist the smell of freshly
+    baked goods. That evil, traitorous smell that calls his name.\n\nDespite being
+    gluten intolerant, he can\u2019t resist a good loaf, which results in an hour
+    of agonized mewing and regrets. Perhaps that\u2019s why he always looks so cross.
+    Legend has it that he\u2019s only smiled twice in his life; though he\u2019ll
+    deny it."
   type: 1
-  theme: {fileID: 0}
+  theme: {fileID: 8300000, guid: 7da3ef19627c045cd8d21b23ec8d8cf2, type: 3}
