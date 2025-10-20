@@ -26,7 +26,7 @@ public class Menu : MonoBehaviour
     }
   }
 
-  // THIS IS CODE FOR GARY'S TRANSFORM CLASS
+  // THIS IS CODE FOR GARY'S TRANSITION CLASS
   /*
   public void ToggleMode()
   {

@@ -276,11 +276,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2126478261501302831, guid: 6cf3c5697f071c344b31d7efb24ceee1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.1115
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2126478261501302831, guid: 6cf3c5697f071c344b31d7efb24ceee1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.75842
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2126478261501302831, guid: 6cf3c5697f071c344b31d7efb24ceee1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1301,11 +1301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 143.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 108.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4271,6 +4271,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf13bd4d02964d6187a8add0efa1449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Appear
+  jumpHeight: 666
+  bobHeight: 10
+  bobSpeed: 0.47
+  appear: 0
+  scuffed: 1
+  played: 0
 --- !u!82 &1845053423
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4838,11 +4844,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 143.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 108.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5048,7 +5054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1950309278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5972,11 +5978,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 143.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 108.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606754045056746147, guid: beb8832d9f62c40108d4c6bb7cde9af0, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,6 +1,3 @@
-/*
-TODO: I've disabled this for now to focus on the story button. figure out how to work back into system!
-
 using UnityEngine;
 
 public class Appear : MonoBehaviour
@@ -64,4 +61,3 @@ public class Appear : MonoBehaviour
     }
   }
 }
-*/
