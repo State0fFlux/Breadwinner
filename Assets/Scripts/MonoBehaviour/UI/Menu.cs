@@ -1,36 +1,94 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
 
-  public Animator transitionAnimator;
-  public void GoToScene(string sceneName)
-  {
-    SceneManager.LoadScene(sceneName);
-  }
+    public Animator transitionAnimator;
+    public int game_state = 0;
 
-  public void Quit()
-  {
-    Application.Quit();
-    Debug.Log("It's Joever.");
-  }
+    public bool isDialogueMode = false;
+    public List<Transition> buttonsToHide;
+    public GameObject dialogueBox;
 
-  public void ToggleActive(GameObject obj)
-  {
-    StartCoroutine(ToggleAfterAnimation(obj));
-  }
-  
-  private IEnumerator ToggleAfterAnimation(GameObject obj)
-{
-    transitionAnimator.SetTrigger("Swoosh");
-    yield return new WaitForSeconds(0.15f);
-    obj.SetActive(!obj.activeSelf);
-}
+    public static Menu Instance { get; private set; }
 
-  public void Story()
+    private void Awake()
     {
-        Debug.Log("I need to do stuff here!");
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
+    public void ToggleMode()
+    {
+        isDialogueMode = !isDialogueMode;
+
+        if (isDialogueMode)
+        {
+            foreach (var btn in buttonsToHide)
+                    btn.AnimateOffScreen();
+
+            dialogueBox.SetActive(true);
+        }
+        else
+        {
+            foreach (var btn in buttonsToHide)
+                btn.AnimateOnScreen();
+
+            dialogueBox.SetActive(false);
+        }
+    }
+    public void GoToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("It's Joever.");
+    }
+
+    public void ToggleActive(GameObject obj)
+    {
+        StartCoroutine(ToggleAfterAnimation(obj));
+    }
+    
+    private IEnumerator ToggleAfterAnimation(GameObject obj)
+    {
+        transitionAnimator.SetTrigger("Swoosh");
+        yield return new WaitForSeconds(0.15f);
+        obj.SetActive(!obj.activeSelf);
+    }
+
+    public void Story()
+    {
+        ToggleMode();
+        // Only based on ingredients and not companions so far
+        switch (game_state)
+        {
+            case 0: // No ingredients (start of game)
+
+                break;
+            case 1: // 1 ingredient
+
+                break;
+            case 2: // 2 ingredients
+
+                break;
+            case 3: // 3 ingredients
+
+                break;
+            default:
+                break;
+        }
     }
 }
