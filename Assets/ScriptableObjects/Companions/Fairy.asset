@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51836a874f18a4a869aaa9b9e9933594, type: 3}
   m_Name: Fairy
   m_EditorClassIdentifier: Assembly-CSharp::Companion
-  collectibleIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  character: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  collectibleIcon: {fileID: -2990309890484215505, guid: 031ee9f755e944badb91c2788a6cf2a0, type: 3}
+  character: {fileID: -2990309890484215505, guid: 05f60fd151ba94ba5a05c1304273dd96, type: 3}
   accessoryOnPlayer: {fileID: -2990309890484215505, guid: a0f0e9aed521d496aaba2b3aa509c10b, type: 3}
   name: Honeybell
   tagline: Give me a tagline!

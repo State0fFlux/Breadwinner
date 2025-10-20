@@ -17,3 +17,8 @@ public abstract class KeepNewSingleton<T> : MonoBehaviour where T : MonoBehaviou
     Instance = null;
   }
 }
+
+public class KeepNewSingleton : KeepNewSingleton<KeepNewSingleton>
+{
+
+}

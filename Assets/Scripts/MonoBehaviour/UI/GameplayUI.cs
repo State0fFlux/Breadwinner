@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class GameplayUI : MonoBehaviour
 {
   [SerializeField] Slider ingredientSlider;
-  [SerializeField] TextMeshProUGUI companionsText;
 
   void OnEnable() => InventoryData.Instance.OnInventoryChanged += UpdateInventoryUI;
   void OnDisable() => InventoryData.Instance.OnInventoryChanged -= UpdateInventoryUI;
@@ -21,12 +20,5 @@ public class GameplayUI : MonoBehaviour
     IngredientData type = LevelMaster.Instance.data.ingredientGoal;
     float percentage = InventoryData.Instance.GetPercentage(type);
     ingredientSlider.value = percentage;
-
-    companionsText.text = "Companions:\n";
-    // Handle companions
-    foreach (CompanionData companion in InventoryData.Instance.Companions)
-    {
-      companionsText.text += $"{companion.type}\n";
-    }
   }
 }

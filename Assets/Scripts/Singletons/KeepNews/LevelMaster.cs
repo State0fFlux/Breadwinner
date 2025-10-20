@@ -3,8 +3,6 @@ public class LevelMaster : KeepNewSingleton<LevelMaster>
 {
   public LevelData data;
 
-  private AudioSource audioSrc;
-
   protected override void OnEnable()
   {
     base.OnEnable();
@@ -16,17 +14,11 @@ public class LevelMaster : KeepNewSingleton<LevelMaster>
     Actions.OnFairyAcquired -= ImproveCamera;
   }
 
-  void Awake()
-  {
-    audioSrc = GetComponent<AudioSource>();
-  }
-
   void Start()
   {
     InventoryData.Instance.Remove(data.ingredientGoal);
     InventoryData.Instance.Remove(data.companionGoal);
-    audioSrc.clip = data.theme;
-    audioSrc.Play();
+    TransitionMaster.Instance.SetMusic(data.theme);
   }
 
   void ImproveCamera()

@@ -16,3 +16,8 @@ public abstract class KeepOldSingleton<T> : MonoBehaviour where T : MonoBehaviou
     DontDestroyOnLoad(gameObject);
   }
 }
+
+public class KeepOldSingleton : KeepOldSingleton<KeepOldSingleton>
+{
+
+}

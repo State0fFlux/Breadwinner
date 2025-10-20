@@ -24,12 +24,14 @@ public class CollectionMenu : MonoBehaviour
   public void Next()
   {
     index = (index + 1) % numCompanions;
+    TransitionMaster.Instance.sfx.Play();
     UpdateCard();
   }
 
   public void Prev()
   {
     index = (index - 1 + numCompanions) % numCompanions;
+    TransitionMaster.Instance.sfx.Play();
     UpdateCard();
   }
 

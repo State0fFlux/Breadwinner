@@ -2,10 +2,13 @@ using System;
 using UnityEngine;
 static class Actions
 {
+  // Companions
   public static Action<CompanionData> OnCompanionAcquired;
   public static Action OnFairyAcquired;
   public static Action OnGhostAcquired;
   public static Action OnCatAcquired;
+
+
 
   static Actions()
   {

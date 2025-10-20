@@ -6,89 +6,94 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 
-    public Animator transitionAnimator;
-    public int game_state = 0;
+  public Animator transitionAnimator;
+  public int game_state = 0;
 
-    public bool isDialogueMode = false;
-    public List<Transition> buttonsToHide;
-    public GameObject dialogueBox;
+  public bool isDialogueMode = false;
+  public GameObject dialogueBox;
 
-    public static Menu Instance { get; private set; }
+  public static Menu Instance { get; private set; }
 
-    private void Awake()
+  private void Awake()
+  {
+    if (Instance != null && Instance != this)
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
+      Destroy(gameObject);
     }
-
-    public void ToggleMode()
+    else
     {
-        isDialogueMode = !isDialogueMode;
-
-        if (isDialogueMode)
-        {
-            foreach (var btn in buttonsToHide)
-                    btn.AnimateOffScreen();
-
-            dialogueBox.SetActive(true);
-        }
-        else
-        {
-            foreach (var btn in buttonsToHide)
-                btn.AnimateOnScreen();
-
-            dialogueBox.SetActive(false);
-        }
+      Instance = this;
     }
-    public void GoToScene(string sceneName)
+  }
+
+  // THIS IS CODE FOR GARY'S TRANSFORM CLASS
+  /*
+  public void ToggleMode()
+  {
+    isDialogueMode = !isDialogueMode;
+
+    if (isDialogueMode)
     {
-        SceneManager.LoadScene(sceneName);
-    }
+      foreach (var btn in buttonsToHide)
+        btn.AnimateOffScreen();
 
-    public void Quit()
+      dialogueBox.SetActive(true);
+    }
+    else
     {
-        Application.Quit();
-        Debug.Log("It's Joever.");
-    }
+      foreach (var btn in buttonsToHide)
+        btn.AnimateOnScreen();
 
-    public void ToggleActive(GameObject obj)
+      dialogueBox.SetActive(false);
+    }
+  }
+
+
+
+  public void ToggleActive(GameObject obj)
+  {
+    StartCoroutine(ToggleAfterAnimation(obj));
+  }
+
+  private IEnumerator ToggleAfterAnimation(GameObject obj)
+  {
+    transitionAnimator.SetTrigger("Swoosh");
+    yield return new WaitForSeconds(0.15f);
+    obj.SetActive(!obj.activeSelf);
+  }
+
+  public void Story()
+  {
+    ToggleMode();
+    // Only based on ingredients and not companions so far
+    switch (game_state)
     {
-        StartCoroutine(ToggleAfterAnimation(obj));
+      case 0: // No ingredients (start of game)
+
+        break;
+      case 1: // 1 ingredient
+
+        break;
+      case 2: // 2 ingredients
+
+        break;
+      case 3: // 3 ingredients
+
+        break;
+      default:
+        break;
     }
-    
-    private IEnumerator ToggleAfterAnimation(GameObject obj)
-    {
-        transitionAnimator.SetTrigger("Swoosh");
-        yield return new WaitForSeconds(0.15f);
-        obj.SetActive(!obj.activeSelf);
-    }
+  }
+  */
 
-    public void Story()
-    {
-        ToggleMode();
-        // Only based on ingredients and not companions so far
-        switch (game_state)
-        {
-            case 0: // No ingredients (start of game)
+  public void GoToScene(string sceneName)
+  {
+    SceneManager.LoadScene(sceneName);
+  }
 
-                break;
-            case 1: // 1 ingredient
-
-                break;
-            case 2: // 2 ingredients
-
-                break;
-            case 3: // 3 ingredients
-
-                break;
-            default:
-                break;
-        }
-    }
+  public void Exit()
+  {
+    Application.Quit();
+    Debug.Log("It's Joever.");
+  }
 }
