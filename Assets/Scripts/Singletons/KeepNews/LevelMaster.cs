@@ -8,12 +8,12 @@ public class LevelMaster : KeepNewSingleton<LevelMaster>
   protected override void OnEnable()
   {
     base.OnEnable();
-    Global.OnFairyAcquired += ImproveCamera;
+    Actions.OnFairyAcquired += ImproveCamera;
   }
   protected override void OnDisable()
   {
     base.OnDisable();
-    Global.OnFairyAcquired -= ImproveCamera;
+    Actions.OnFairyAcquired -= ImproveCamera;
   }
 
   void Awake()

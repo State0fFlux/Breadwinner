@@ -160,7 +160,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 80
+  orthographic size: 40
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -656,6 +656,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634b6b55e61aa4df88a715098d34dbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
+  transitionAnimator: {fileID: 0}
+  game_state: 0
+  isDialogueMode: 0
+  buttonsToHide: []
+  dialogueBox: {fileID: 0}
 --- !u!223 &567127458957540311
 Canvas:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Companion
   collectibleIcon: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   character: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  accessoryOnPlayer: {fileID: 1075993247170539406, guid: 046a0f1e04fb74fd9a040237bd2b2a10, type: 3}
   name: Puff
   tagline: Give me a tagline!
   biography: "Nobody knows what color Puff\u2019s fur really is anymore. Not even

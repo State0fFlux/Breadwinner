@@ -28,10 +28,6 @@ static class Global
     return System.Text.RegularExpressions.Regex.Replace(s, "(\\B[A-Z])", " $1");
   }
 
-  public static Action OnFairyAcquired;
-  public static Action OnCatAcquired;
-  public static Action OnGhostAcquired;
-
   public static IEnumerator AnimateFloat(float start, float end, Action<float> onUpdate, float duration = 2f, Action onComplete = null)
   {
     float t = 0f;

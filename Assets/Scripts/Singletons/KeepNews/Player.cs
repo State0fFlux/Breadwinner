@@ -11,13 +11,13 @@ public class Player : KeepNewSingleton<Player>
   protected override void OnEnable()
   {
     base.OnEnable();
-    Global.OnFairyAcquired += ImproveLight;
+    Actions.OnFairyAcquired += ImproveLight;
     Movement = gameObject.AddComponent<Movement>();
   }
   protected override void OnDisable()
   {
     base.OnDisable();
-    Global.OnFairyAcquired -= ImproveLight;
+    Actions.OnFairyAcquired -= ImproveLight;
     Destroy(Movement);
   }
 

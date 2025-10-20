@@ -8,11 +8,11 @@ public class Portal : Door
 
   void OnEnable()
   {
-    Global.OnGhostAcquired += EnableGhostPhase;
+    Actions.OnGhostAcquired += EnableGhostPhase;
   }
   void OnDisable()
   {
-    Global.OnGhostAcquired -= EnableGhostPhase;
+    Actions.OnGhostAcquired -= EnableGhostPhase;
   }
 
   void EnableGhostPhase()
