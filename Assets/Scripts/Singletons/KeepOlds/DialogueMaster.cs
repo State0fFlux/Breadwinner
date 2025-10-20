@@ -22,25 +22,30 @@ public class DialogueMaster : KeepOldSingleton<DialogueMaster>
   {
     if (Input.GetKeyDown(KeyCode.R))
     {
-      RotateSprite(90f);
-      if (img.sprite == a)
-      {
-        img.sprite = b;
-      }
-      else
-      {
-        img.sprite = a;
-      }
-      RotateSprite(90f);
+      StartCoroutine(SwapSprite());
     }
   }
 
-  void RotateSprite(float change)
+  IEnumerator SwapSprite()
+  {
+    yield return RotateSprite(90f);
+    if (img.sprite == a)
+    {
+      img.sprite = b;
+    }
+    else
+    {
+      img.sprite = a;
+    }
+    yield return RotateSprite(90f);
+  }
+
+  IEnumerator RotateSprite(float change)
   {
     float startY = node.transform.eulerAngles.y;
     float endY = startY + change;
 
-    StartCoroutine(Global.AnimateFloat(
+    yield return Global.AnimateFloat(
         start: startY,
         end: endY,
         onUpdate: value =>
@@ -50,7 +55,7 @@ public class DialogueMaster : KeepOldSingleton<DialogueMaster>
           node.transform.eulerAngles = euler;
         },
         duration: 1f
-    ));
+    );
   }
 
   public void RunDialogue()
