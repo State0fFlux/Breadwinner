@@ -64,6 +64,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            textComponent.text = string.Empty;
             checklist.SetActive(true);
             story.EndStory();
         }
