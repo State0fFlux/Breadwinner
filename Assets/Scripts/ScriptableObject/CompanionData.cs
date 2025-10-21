@@ -12,6 +12,7 @@ public class CompanionData : CollectibleData
 
   public Sprite character;
   public Sprite accessoryOnPlayer;
+  public Sprite stickerFound;
   public new string name = "What is my name?";
   public string tagline = "Give me a tagline!";
 

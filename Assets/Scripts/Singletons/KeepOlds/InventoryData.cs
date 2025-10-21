@@ -97,15 +97,23 @@ public class InventoryData : KeepOldSingleton<InventoryData>
     return true;
   }
 
+  public void Restart(IngredientData toRestart)
+  {
+    ingredients[toRestart] = 0;
+  }
+
   public float GetPercentage(IngredientData ingredient)
   {
     float percentage = (float)GetCount(ingredient) / ingredient.needed;
+    print("Percentage: " + percentage);
     return percentage;
   }
 
   public int GetCount(IngredientData ingredient)
   {
-    return ingredients.GetValueOrDefault(ingredient, 0);
+    int count = ingredients.GetValueOrDefault(ingredient, 0);
+    print("Count: " + count);
+    return count;
   }
 
   public bool Has(CompanionData.Type type)

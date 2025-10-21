@@ -15,8 +15,9 @@ MonoBehaviour:
   collectibleIcon: {fileID: -2990309890484215505, guid: 031ee9f755e944badb91c2788a6cf2a0, type: 3}
   character: {fileID: -2990309890484215505, guid: 05f60fd151ba94ba5a05c1304273dd96, type: 3}
   accessoryOnPlayer: {fileID: -2990309890484215505, guid: a0f0e9aed521d496aaba2b3aa509c10b, type: 3}
+  stickerFound: {fileID: 3766092487878321618, guid: 7e1cf19153af0460192dc5c74e475ad0, type: 3}
   name: Honeybell
-  tagline: Give me a tagline!
+  tagline: "\u201CWhat is a <i>child</i> doing down here in the dark alone?\u201D"
   biography: "With just a sweep of her hand, Honeybell is able to conjure tiny golden
     sparks that fill Crust\u2019s Bakery with warmth. These sparks seem to be alive,
     fluttering and thriving long after she\u2019s gone. When they\u2019re not filling

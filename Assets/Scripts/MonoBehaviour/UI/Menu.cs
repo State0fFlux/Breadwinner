@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +7,7 @@ public class Menu : MonoBehaviour
   public int game_state = 0;
 
   public bool isDialogueMode = false;
-  
+
 
   public static Menu Instance { get; private set; }
 
@@ -84,15 +82,4 @@ public class Menu : MonoBehaviour
     }
   }
   */
-
-  public void GoToScene(string sceneName)
-  {
-    SceneManager.LoadScene(sceneName);
-  }
-
-  public void Exit()
-  {
-    Application.Quit();
-    Debug.Log("It's Joever.");
-  }
 }

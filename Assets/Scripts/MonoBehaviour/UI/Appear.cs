@@ -39,7 +39,7 @@ public class Appear : MonoBehaviour
     {
       if (!played)
       {
-        GetComponent<AudioSource>().Play(0);
+        GetComponent<AudioSource>().Play();
         played = true;
       }
 

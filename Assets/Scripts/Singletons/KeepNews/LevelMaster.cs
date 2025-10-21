@@ -16,7 +16,7 @@ public class LevelMaster : KeepNewSingleton<LevelMaster>
 
   void Start()
   {
-    InventoryData.Instance.Remove(data.ingredientGoal);
+    InventoryData.Instance.Restart(data.ingredientGoal);
     InventoryData.Instance.Remove(data.companionGoal);
     TransitionMaster.Instance.SetMusic(data.theme);
   }

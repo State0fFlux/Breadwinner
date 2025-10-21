@@ -6,7 +6,6 @@ public class MainMenu : MonoBehaviour
 {
   public GameObject notif;
   public AudioClip theme;
-  public Animator ani;
 
   void Start()
   {
@@ -29,9 +28,7 @@ public class MainMenu : MonoBehaviour
   public void ToggleActive(GameObject obj)
   {
     TransitionMaster.Instance.sfx.Play();
-    ani.SetTrigger("Swoosh");
-    obj.SetActive(!obj.activeSelf);
-    // TransitionMaster.Instance.Transition(() => {  });
+    TransitionMaster.Instance.Transition(() => { obj.SetActive(!obj.activeSelf); });
   }
 
   public void DisableNotif()

@@ -1,15 +1,18 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameplayUI : MonoBehaviour
 {
   [SerializeField] Slider ingredientSlider;
+  [SerializeField] TextMeshProUGUI ingredientLabel;
 
   void OnEnable() => InventoryData.Instance.OnInventoryChanged += UpdateInventoryUI;
   void OnDisable() => InventoryData.Instance.OnInventoryChanged -= UpdateInventoryUI;
 
   void Start()
   {
+    ingredientLabel.text = LevelMaster.Instance.data.ingredientGoal.ToString() + ":";
     UpdateInventoryUI();
   }
 
