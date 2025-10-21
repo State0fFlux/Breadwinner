@@ -777,12 +777,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
+  m_fontSize: 80
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 40
-  m_fontSizeMax: 150
+  m_fontSizeMax: 80
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481656043}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -1378,43 +1378,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 481656045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 481656050}
-        m_TargetAssemblyTypeName: ImageSlider, Assembly-CSharp
-        m_MethodName: SlideOff
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1950309277}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 267018398}
-        m_TargetAssemblyTypeName: Story, Assembly-CSharp
-        m_MethodName: EndStory
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &481656050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,13 +1408,15 @@ MonoBehaviour:
   textComponent: {fileID: 275001687}
   lines:
   - 
-  - 
   - '"Test message 1"'
   - '"Test message 2"'
   - LONG LONG LONG LONG LONG LONG LONG LONG LONG MESSAGE
-  textSpeed: 0.08
+  - I need bread.
+  - I need bread baaaaaaaad.
+  textSpeed: 0.05
   checklist: {fileID: 1950309277}
   story: {fileID: 267018398}
+  index: 0
 --- !u!1001 &505837584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2254,7 +2220,6 @@ MonoBehaviour:
   music: {fileID: 1870440213}
   companionFound: {fileID: 8300000, guid: 03242f505904f4cecb97cb92e57e5dc9, type: 3}
   sticker: {fileID: 1259707871}
-  speed: 10
 --- !u!95 &799300745
 Animator:
   serializedVersion: 7
@@ -3133,7 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
   rotationAmount: 2
-  rotationSpeed: 0.46
+  rotationSpeed: 0.47
 --- !u!114 &1164180790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,7 +3877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
   rotationAmount: 2
-  rotationSpeed: 0.46
+  rotationSpeed: 0.47
 --- !u!114 &1596772570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,6 +5273,7 @@ GameObject:
   - component: {fileID: 1950309278}
   - component: {fileID: 1950309282}
   - component: {fileID: 1950309281}
+  - component: {fileID: 1950309283}
   m_Layer: 0
   m_Name: Checklist
   m_TagString: Untagged
@@ -5373,6 +5339,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950309277}
   m_CullTransparentMesh: 1
+--- !u!114 &1950309283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950309277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7c28192fe954d4299cddc34e8f3d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiggleWiggle
+  rotationAmount: 2
+  rotationSpeed: 0.47
 --- !u!1 &1984427464
 GameObject:
   m_ObjectHideFlags: 0

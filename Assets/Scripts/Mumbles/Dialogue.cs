@@ -12,11 +12,12 @@ public class Dialogue : MonoBehaviour
     public GameObject checklist;
     public Story story;
 
-    private int index;
+    public int index = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        index = 0;
         textComponent.text = string.Empty;
         StartDialogue();
     }
