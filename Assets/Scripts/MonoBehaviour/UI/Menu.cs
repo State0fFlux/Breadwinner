@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
   public int game_state = 0;
 
   public bool isDialogueMode = false;
-  public GameObject dialogueBox;
+  
 
   public static Menu Instance { get; private set; }
 
@@ -37,7 +37,7 @@ public class Menu : MonoBehaviour
       foreach (var btn in buttonsToHide)
         btn.AnimateOffScreen();
 
-      dialogueBox.SetActive(true);
+      
     }
     else
     {
