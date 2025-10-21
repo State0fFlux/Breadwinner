@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 
-  public Animator transitionAnimator;
   public int game_state = 0;
 
   public bool isDialogueMode = false;

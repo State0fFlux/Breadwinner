@@ -29,15 +29,15 @@ public class TransitionMaster : KeepOldSingleton<TransitionMaster>
 
   public void Transition(Action midway)
   {
-    StartCoroutine(TransitionCoroutine(midway));
+    // StartCoroutine(TransitionCoroutine(midway));
   }
 
-  IEnumerator TransitionCoroutine(Action midway)
-  {
-    yield return i.SlideOnCoroutine(speed);
-    midway?.Invoke();
-    yield return i.SlideOffCoroutine(speed);
-  }
+  // IEnumerator TransitionCoroutine(Action midway)
+  // {
+  //   yield return i.SlideOnCoroutine(speed);
+  //   midway?.Invoke();
+  //   yield return i.SlideOffCoroutine(speed);
+  // }
 
   /*
     IEnumerator TransitionCoroutine(Action midway)

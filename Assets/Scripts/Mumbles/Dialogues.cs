@@ -9,6 +9,9 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     public float textSpeed;
 
+    public GameObject checklist;
+    public Story story;
+
     private int index;
 
     // Start is called before the first frame update
@@ -60,7 +63,8 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            checklist.SetActive(true);
+            story.EndStory();
         }
     }
 }

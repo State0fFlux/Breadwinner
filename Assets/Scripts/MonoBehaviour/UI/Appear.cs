@@ -48,7 +48,7 @@ public class Appear : MonoBehaviour
       newY = Mathf.Sin(elapsed * bobSpeed * Mathf.PI * 2) * jumpHeight;
       rectTransform.anchoredPosition = originalPosition + new Vector3(0, newY, 0);
       Debug.Log(newY + "-" + oldY + "=" + (newY - oldY));
-      if (rectTransform.anchoredPosition.y >= 280 && rectTransform.anchoredPosition.y <= 290 && newY - oldY < -1.5)
+      if (rectTransform.anchoredPosition.y >= 280 && rectTransform.anchoredPosition.y <= 290 && newY - oldY < -3)
       {
         appear = false;
         scuffed = false;

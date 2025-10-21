@@ -16,7 +16,7 @@ public class Story : MonoBehaviour
       item.SlideOff();
     }
     dialogueBox.SetActive(true);
-    dialogbox.SlideOn();
+    dialogbox.SlideOff();
     // 2: determine our next level judging by the ingredients we have
     // 3: run the dialogue scene for that level (fetch from scriptable object array somewhere?)
     // 4: open the next scene
