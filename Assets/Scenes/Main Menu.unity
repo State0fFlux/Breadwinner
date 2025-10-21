@@ -1408,10 +1408,11 @@ MonoBehaviour:
   textComponent: {fileID: 275001687}
   lines:
   - 
+  - 
   - '"Test message 1"'
   - '"Test message 2"'
-  - LONG LONG LONG LONG LONG LONG LONG LONG LONG MESSAGE
-  - I need bread.
+  - LONG LONG LONG LONG LONG LONG LONG LONG LONG TESSSST MESSAGE
+  - I NEED bread.
   - I need bread baaaaaaaad.
   textSpeed: 0.05
   checklist: {fileID: 1950309277}
