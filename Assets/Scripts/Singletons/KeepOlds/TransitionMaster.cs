@@ -33,7 +33,7 @@ public class TransitionMaster : KeepOldSingleton<TransitionMaster>
 
   void ShowSticker(CompanionData data)
   {
-    sfx.PlayOneShot(companionFound);
+    sfx.PlayOneShot(companionFound, 2f);
     sticker.sprite = data.stickerFound;
     anim.SetTrigger("ShowSticker");
   }

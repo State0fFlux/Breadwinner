@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d0a960b8387413b9eec88382fbb013, type: 3}
   m_Name: Flour
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  icon: {fileID: 0}
+  collectibleIcon: {fileID: 9132784678072903462, guid: 8c929365abb564cf7affd38fe305a106, type: 3}
   type: 1
   needed: 3

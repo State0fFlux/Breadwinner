@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ghost
   m_EditorClassIdentifier: Assembly-CSharp::Companion
   collectibleIcon: {fileID: 5992390906293078999, guid: f52b227d5f095403eb04289d46f51212, type: 3}
-  character: {fileID: 344741202927818917, guid: 276ba6afab6a843c085c103e43b5bf61, type: 3}
+  character: {fileID: 4448715427215634006, guid: b8718087f5fb64cf7a75171d0cb06f4e, type: 3}
   accessoryOnPlayer: {fileID: 5992390906293078999, guid: 0006430e99f1949b69a438c7d7e70a73, type: 3}
   stickerFound: {fileID: 344741202927818917, guid: 276ba6afab6a843c085c103e43b5bf61, type: 3}
   name: Brine

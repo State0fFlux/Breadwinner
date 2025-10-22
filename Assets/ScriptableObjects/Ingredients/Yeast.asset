@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d0a960b8387413b9eec88382fbb013, type: 3}
   m_Name: Yeast
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  icon: {fileID: 0}
+  collectibleIcon: {fileID: 6242852387052353862, guid: 217b4fef6ebed4d24a8ec94c4a9444a6, type: 3}
   type: 2
   needed: 3

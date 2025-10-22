@@ -7,6 +7,7 @@ public class Story : MonoBehaviour
   public ImageSlider[] clutter;
   public ImageSlider dialogbox;
   public GameObject dialogueBox;
+  public GameObject crust;
   public void StartStory()
   {
     Menu.Instance.isDialogueMode = true;
@@ -15,6 +16,8 @@ public class Story : MonoBehaviour
     {
       item.SlideOff();
     }
+    crust.GetComponent<Animator>().SetTrigger("Appear");
+    crust.GetComponent<AudioSource>().Play();
     dialogueBox.SetActive(true);
     dialogbox.SlideOff();
     // 2: determine our next level judging by the ingredients we have

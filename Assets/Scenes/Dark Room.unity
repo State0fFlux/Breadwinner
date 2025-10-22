@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -585,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -642,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -699,6 +711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -878,6 +894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1087,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yeast
       objectReference: {fileID: 0}
+    - target: {fileID: 9045569171274551669, guid: 48148816b6d8049f09c40c29240c9fd6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

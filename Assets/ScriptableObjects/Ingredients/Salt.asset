@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d0a960b8387413b9eec88382fbb013, type: 3}
   m_Name: Salt
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  icon: {fileID: 0}
+  collectibleIcon: {fileID: -1162442978445507191, guid: f5b7adda5584a4453b606c536156bf1a, type: 3}
   type: 0
   needed: 3
