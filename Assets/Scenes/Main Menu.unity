@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429203821}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a163f4c46e6b24a4a887be38fa5aac87, type: 3}
   m_Name: 
@@ -1406,17 +1406,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textComponent: {fileID: 275001687}
-  lines:
-  - 
-  - 
-  - '"Test message 1"'
-  - '"Test message 2"'
+  starting:
+  - ' '
+  - ' '
+  - This should play at the start
+  - Test message 1
+  - Test message 2
   - LONG LONG LONG LONG LONG LONG LONG LONG LONG TESSSST MESSAGE
   - I NEED bread.
   - I need bread baaaaaaaad.
+  a_yeast_y_friend:
+  - "Yay, we got the yeast! And a new friend! Wasn\u2019t she beautiful?"
+  - Now, we have another friend to share our bread with!
+  - "We\u2019re on a roll, haha!"
+  - "Next up, we should get some salt. I can\u2019t seem to remember where I put
+    it though..."
+  - Hopefully, we can rise to the challenge and find it together!
+  a_yeast_n_friend:
+  - Yay, we got the yeast!
+  - "We\u2019re on a roll, haha!"
+  - "Next up, we should get some salt. I can\u2019t seem to remember where I put
+    it though..."
+  - Hopefully, we can rise to the challenge and find it together!
+  a_salt_y_friend:
+  - "Wow\u2026 we really need to fix those doors, haha!"
+  - But at least we got the salt, thanks to you and Brine!
+  - "I\u2019m sure they\u2019ll love the bread too! Let\u2019s not keep them waiting,
+    okay?"
+  - "No more loafing around! We\u2019ve got a bread to bake!"
+  a_salt_n_friend:
+  - "Wow\u2026 we really need to fix those doors, haha!"
+  - But at least we got the salt!
+  - "I think that\u2019s everything we need, which means no more loafing around!"
+  - "We\u2019ve got a bread to bake!"
   textSpeed: 0.05
   checklist: {fileID: 1950309277}
   story: {fileID: 267018398}
+  MainMenu: {fileID: 242132293}
   index: 0
 --- !u!1001 &505837584
 PrefabInstance:
