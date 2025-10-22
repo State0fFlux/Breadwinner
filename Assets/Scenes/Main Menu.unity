@@ -2591,11 +2591,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1174286754202149509, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
       propertyPath: startingCompanions.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1174286754202149509, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
       propertyPath: startingIngredients.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1174286754202149509, guid: f26db606b52db4fb4b5c751b5c102a28, type: 3}
       propertyPath: 'startingCompanions.Array.data[0]'
