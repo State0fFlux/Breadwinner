@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
   data: {fileID: 11400000, guid: ba0984ca5cbcf43aa976e79988a65f61, type: 2}
+  collectionSFX: {fileID: 8300000, guid: d97b2a38ec2de4ce29598bee26f8f166, type: 3}
 --- !u!82 &1500734672796226787
 AudioSource:
   m_ObjectHideFlags: 0
@@ -154,7 +155,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ee41b0a53f4b246fea16c2611e5b23b0, type: 3}
+  m_Resource: {fileID: 8300000, guid: 716eb4e34c8ea47b4b1eb5371fdf1bcf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
