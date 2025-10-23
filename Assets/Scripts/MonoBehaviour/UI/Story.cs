@@ -20,9 +20,6 @@ public class Story : MonoBehaviour
     crust.GetComponent<AudioSource>().Play();
     dialogueBox.SetActive(true);
     dialogbox.SlideOff();
-    // 2: determine our next level judging by the ingredients we have
-    // 3: run the dialogue scene for that level (fetch from scriptable object array somewhere?)
-    // 4: open the next scene
   }
 
   public void EndStory()

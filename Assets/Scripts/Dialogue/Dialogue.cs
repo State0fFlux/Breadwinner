@@ -6,17 +6,6 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
   public TextMeshProUGUI textComponent;
-
-  // public string[] starting = new string[] {
-  //     " ",
-  //     " ",
-  //     "This should play at the start",
-  //     "Test message 1",
-  //     "Test message 2",
-  //     "LONG LONG LONG LONG LONG LONG LONG LONG LONG TESSSST MESSAGE",
-  //     "I NEED bread.",
-  //     "I need bread baaaaaaaad."
-  // };
   string[] starting = new string[] {
         "Hello, everyone!",
         "Welcome to my bakery, I'm so happy to have all of you here!",
@@ -25,7 +14,7 @@ public class Dialogue : MonoBehaviour
         "Let's go, my sous-chef!"
     };
   string[] a_yeast_y_friend = new string[] {
-        "Yay, we got the yeast! And a new friend! Wasn't she beautiful?",
+        "Yay, we got the yeast! And a new friend, Honeybell! Isn't she beautiful?",
         "Now, we have another friend to share our bread with!",
         "We're on a roll, haha!",
         "Next up, we should get some salt. I can't seem to remember where I put it though...",
@@ -58,7 +47,7 @@ public class Dialogue : MonoBehaviour
   public float textSpeed;
   public Story story;
 
-  public int index = 0;
+  private int index = 0;
 
   // Start is called before the first frame update
   void Start()
@@ -98,6 +87,7 @@ public class Dialogue : MonoBehaviour
   }
 
   // Update is called once per frame
+  /*
   void Update()
   {
     if (Input.GetMouseButtonDown(0))
@@ -111,6 +101,20 @@ public class Dialogue : MonoBehaviour
         StopAllCoroutines();
         textComponent.text = lines[index];
       }
+    }
+  }
+  */
+
+  public void AdvanceDialogue()
+  {
+    if (textComponent.text == lines[index])
+    {
+      NextLine();
+    }
+    else
+    {
+      StopAllCoroutines();
+      textComponent.text = lines[index];
     }
   }
 
